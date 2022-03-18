@@ -1,10 +1,10 @@
 import express from "express";
-import { getActivity } from "./grepperHandler.js";
-import { activityBox } from "./svgHandler.js";
+import { getActivity } from "../grepperHandler.js";
+import { activityBox } from "../svgHandler.js";
 
 const app = express();
 
-app.get("/activity", async (req, res) => {
+app.get("/api/activity", async (req, res) => {
   let name = req.query.name;
   let id = req.query.id;
   let activity = await getActivity(id);
