@@ -12,7 +12,7 @@ app.get("/api/activity", async (req, res) => {
 });
 
 // PORT
-const PORT = 3000;
+const PORT = process.env.PORT || 8080;
 
 app.listen(PORT, () => {
    console.log("\x1b[32m%s\x1b[0m",`Server is running on PORT: ${PORT}`);
