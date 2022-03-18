@@ -1,3 +1,5 @@
+const width = 969;
+
 export const activityBox = (name,activity) => {
   let activityList = '<g transform="translate(0, 30)">';
   for (let i = 0; i < activity.length && i < 5; i++) {
@@ -5,15 +7,15 @@ export const activityBox = (name,activity) => {
     activityList += `
       <g transform="translate(0, ${i*30})">
         <text class="list-item">Viewed code answer to "${activity[i].answer_title.length>60?activity[i].answer_title.slice(0,57)+"\"...":activity[i].answer_title+"\""}</text>
-        <text x="850" text-anchor="end" class="list-item">${date.toLocaleString('en-US', { hour: 'numeric', hour12: true, minute:'2-digit' })}</text>
-        ${i<4?'<line x1 = "0" y1 = "9" x2 = "850" y2 = "9" stroke = "#eee" stroke-width = "1"/>':''}
+        <text x="${width-50}" text-anchor="end" class="list-item">${date.toLocaleString('en-US', { hour: 'numeric', hour12: true, minute:'2-digit' })}</text>
+        ${i<4?`<line x1 = "0" y1 = "9" x2 = "${width-50}" y2 = "9" stroke = "#eee" stroke-width = "1"/>`:''}
       </g>
     `;
     
   }
   activityList += "</g>"
   let box = `
-    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="900" height="200" viewBox="0 0 900 200">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="${width}" height="200" viewBox="0 0 ${width} 200">
       <style>
         text {
           font-family: sans-serif;
