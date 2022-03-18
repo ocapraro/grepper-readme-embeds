@@ -7,8 +7,11 @@ Replace `YOUR%20NAME` with the name you wish to be displayed in the embed, and r
   <img align="left" width="765em" src="https://grepper-readme-embeds.vercel.app/api/activity?name=YOUR%20NAME&id=YOUR_ID" />
 </a></div>
 ```
+<<<<<<< HEAD
 
 # Demo
 <div><a href="https://github.com/ocapraro/grepper-readme-embeds">
   <img align="left" width="765em" src="https://grepper-readme-embeds.vercel.app/api/activity?name=Oscar%20Capraro&id=44392" />
 </a></div>
+=======
+>>>>>>> 442b99530cf52869eb623963b0d73bd2560aa6e7
