@@ -6,7 +6,7 @@ export const activityBox = (name,activity) => {
     let date = new Date(activity[i].created_at+" GMT");
     activityList += `
       <g transform="translate(0, ${i*30})">
-        <text class="list-item">Viewed code answer to "${activity[i].answer_title.length>60?activity[i].answer_title.slice(0,57)+"\"...":activity[i].answer_title+"\""}</text>
+        <text class="list-item">${activity[i].is_my_answer?"Added code answer for":"Viewed code answers for"} "${activity[i].answer_title.length>60?activity[i].answer_title.slice(0,57)+"\"...":activity[i].answer_title+"\""}</text>
         <text x="${width-50}" text-anchor="end" class="list-item">${date.toLocaleString('en-US', { hour: 'numeric', hour12: true, minute:'2-digit' })}</text>
         ${i<4?`<line x1 = "0" y1 = "9" x2 = "${width-50}" y2 = "9" stroke = "#eee" stroke-width = "1"/>`:''}
       </g>
