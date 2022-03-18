@@ -12,7 +12,7 @@ export const router = express.Router();
 router.get("/", async (req, res) => {
   let name = req.query.name;
   let id = req.query.id;
-  if(name & id) {
+  if(name && id) {
     let activity = await getActivity(id);
     res.send(activityBox(name,activity));
   }else{
