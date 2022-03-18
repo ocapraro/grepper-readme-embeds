@@ -14,6 +14,7 @@ router.get("/", async (req, res) => {
   let id = req.query.id;
   if(name && id) {
     let activity = await getActivity(id);
+    res.setHeader("Content-Type", "image/svg+xml");
     res.send(activityBox(name,activity));
   }else{
     res.send(null);
