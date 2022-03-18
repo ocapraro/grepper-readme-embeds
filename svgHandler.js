@@ -26,7 +26,7 @@ export const activityBox = (name,activity) => {
           fill: #9E9E9E;
         }
       </style>
-      <rect width="100%" height="100%" fill="#151515" rx="4.5" style="stroke-width:1;stroke:#fff" x="0" y="0" />
+      <rect width="100%" height="100%" fill="#151515" rx="4.5" style="stroke-width:2;stroke:#fff" x="0" y="0" />
       <g transform="translate(25, 35)">
         <text x="0" y="0" style="
           fill:white;
