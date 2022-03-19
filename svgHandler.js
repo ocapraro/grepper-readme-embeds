@@ -35,7 +35,7 @@ export const activityBox = (name,activity) => {
         ${
           activity.length?activityList:`
           <g transform="translate(0, 28)">
-            <text class="list-item">No activity yet..</text>
+            <text class="list-item">No activity yet...</text>
           </g>`
         }
       </g>
