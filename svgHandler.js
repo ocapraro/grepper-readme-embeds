@@ -31,7 +31,7 @@ export const activityBox = (name,activity) => {
         <text x="0" y="0" style="
           fill:white;
           font-size: 19;
-        ">${name}'s Daily Activity</text>
+        ">${name}'s Daily Grepper Activity</text>
         ${
           activity.length?activityList:`
           <g transform="translate(0, 28)">
