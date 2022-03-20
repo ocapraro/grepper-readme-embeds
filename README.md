@@ -4,12 +4,17 @@ Have you ever wanted to share with the world all of those dumb coding questions 
 Replace `YOUR%20NAME` with the name you wish to be displayed in the embed, and replace `YOUR_ID` with your Grepper ID.
 ```
 <div><a href="https://github.com/ocapraro/grepper-readme-embeds">
-  <img align="left" width="765em" src="https://grepper-readme-embeds.vercel.app/api/activity?name=YOUR%20NAME&id=YOUR_ID" />
+  <img align="left" src="https://grepper-readme-embeds.vercel.app/api/activity?name=YOUR%20NAME&id=YOUR_ID" />
 </a></div>
 ```
+
+## Parameters
+-  `name`: the name you wish to be displayed in the embed
+- `id`: your Grepper ID
+- `width`: the width of the embed (default: 969, min: 425)
 
 
 # Demo
 <div><a href="https://github.com/ocapraro/grepper-readme-embeds">
-  <img align="left" width="765em" src="https://grepper-readme-embeds.vercel.app/api/activity?name=Oscar%20Capraro&id=44392" />
+  <img align="left" src="https://grepper-readme-embeds.vercel.app/api/activity?name=Oscar%20Capraro&id=44392" />
 </a></div>
