@@ -14,8 +14,8 @@ Replace `YOUR_ID` with your Grepper ID.
 ```
 
 ## URL Parameters
-- `id`: your Grepper ID
-- `width`: the width of the embed (default: 411)
+- `id` - your Grepper ID
+- `width` - the width of the embed (default: 411)
 
 ## Demo
 <div><a href="https://github.com/ocapraro/grepper-readme-embeds">
@@ -36,9 +36,9 @@ Replace `YOUR%20NAME` with the name you wish to be displayed in the embed, and r
 ```
 
 ## URL Parameters
--  `name`: the name you wish to be displayed in the embed
-- `id`: your Grepper ID
-- `width`: the width of the embed (default: 969, min: 425)
+-  `name` - the name you wish to be displayed in the embed
+- `id` - your Grepper ID
+- `width` - the width of the embed (default: 969, min: 425)
 
 
 ## Demo
