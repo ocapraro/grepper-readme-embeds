@@ -3,19 +3,19 @@ import { basicEmbed } from "./embedTemplates.js";
 const frameworkColors = [
   {
     name:"jQuery",
-    hex:"#6196C6"
+    hex:"#0769ad"
   },
   {
     name:"React",
-    hex:"#94E5FD"
+    hex:"#61DBFB"
   },
   {
     name:"Wordpress",
-    hex:"#63ACD1"
+    hex:"#21759b"
   },
   {
     name:"Node.js",
-    hex:"#88BB7D"
+    hex:"#68a063"
   },
   {
     name:"Express",
