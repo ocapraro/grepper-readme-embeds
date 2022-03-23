@@ -1,8 +1,10 @@
 import express from "express";
-import {router} from "./api/activity.js";
+import { activity } from "./api/activity.js";
+import { frameworks } from "./api/frameworks.js";
 
 const app = express();
-app.use("/api/activity",router)
+app.use("/api/activity",activity);
+app.use("/api/frameworks",frameworks);
 
 // PORT
 const PORT = process.env.PORT || 8080;
