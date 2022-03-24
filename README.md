@@ -1,5 +1,5 @@
 # [Grepper](https://www.codegrepper.com/) README Embeds
-- [Get Your Grepper ID](https://grepper-readme-embeds.vercel.app/api/id)
+- [Get Your Grepper ID](https://grepper-readme-embeds.vercel.app/api/id){:target="\_blank"}
 - [Top Frameworks Card](#top-frameworks-card)
 - [Daily Activity Card](#daily-activity-card)
 
