@@ -11,6 +11,7 @@ export const id = express.Router();
  id.get("/", async (req, res) => {
   let username = req.query.username;
   let id = await getId(username);
+  id=!isNaN(id)?id:"User Not Found";
   let body = `
   <style>
   body {
