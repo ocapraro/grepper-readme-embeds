@@ -31,3 +31,20 @@ export const getExpertise = async (id, type="s") => {
   return expertise
 }
 
+export const getId = async (username) => {
+  let id;
+  await fetch("https://www.codegrepper.com/profile/"+username, {
+    "headers": {
+      "accept": 'application/json',
+    },
+    "method": "GET"
+  })
+  .then((res) => res.text())
+  .then((res) => res.match(/(user_id=).*[0-9]/gm))
+  .then((res) => {
+    id = res[res.length-1].slice(8,res[res.length-1].length);
+  })
+  .catch((err) => console.log(err));
+  return id
+}
+
