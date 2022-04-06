@@ -2,12 +2,10 @@ export const basicEmbed = (title, content, width, style="") => {
   let box = `
     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="${width}" height="200" viewBox="0 0 ${width} 200">
       <style>
-        @media (prefers-color-scheme: dark) {
-          :root {
-            --background-color:#151515;
-            --title-color:#fff;
-            --border-color:#fff;
-          }
+        :root {
+          --background-color:#151515;
+          --title-color:#fff;
+          --border-color:#fff;
         }
         @media (prefers-color-scheme: light) {
           :root {
