@@ -109,7 +109,7 @@ export const frameworkBox = (frameworks,width) => {
       ${gradient}
     </defs>
     <g transform="translate(0, 20)">
-      <rect width="${width-60}" height="10" fill="url(#grad1)" rx="5" />
+      <rect style="width: calc(100% - 60px);" height="10" fill="url(#grad1)" rx="5" />
       ${
         frameworks.length?frameworksList:`
         <g transform="translate(0, 28)">
@@ -117,7 +117,13 @@ export const frameworkBox = (frameworks,width) => {
         </g>`
       }
     </g>
-  `, width);
+  `, width, `
+    @media only screen and (max-width: 600px){
+      .card {
+        width:411px;
+      }
+    }
+  `);
   return box
 }
 

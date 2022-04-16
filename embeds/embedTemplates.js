@@ -1,6 +1,6 @@
 export const basicEmbed = (title, content, width, style="") => {
   let box = `
-    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="${width}" height="200" viewBox="0 0 ${width} 200">
+    <svg class="card" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="${width}" height="200">
       <style>
         :root {
           --background-color:#151515;
@@ -14,6 +14,7 @@ export const basicEmbed = (title, content, width, style="") => {
             --border-color:#000;
           }
         }
+        
         text {
           font-family: sans-serif;
           font-weight: bold;
