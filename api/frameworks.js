@@ -15,7 +15,7 @@ export const frameworks = express.Router();
   if(id) {
     let frameworks = await getExpertise(id, "f");
     res.setHeader("Content-Type", "image/svg+xml");
-    res.send(frameworkBox(frameworks,width));
+    res.send(frameworkBox(frameworks,width, req.headers["user-agent"].includes("Mobile")));
   }else{
     res.send(null);
   }

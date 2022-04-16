@@ -63,7 +63,12 @@ const frameworkColors = [
   }
 ];
 
-export const frameworkBox = (frameworks,width) => {
+export const frameworkBox = (frameworks,width,isMobile) => {
+  let style = isMobile?`
+    .card {
+      width:425px
+    }
+  `:"";
   let activity = frameworks.reduce((a,b)=>a+b[1],0);
   let frameworksList = '<g transform="translate(0, 30)"><g>';
   let gradient = '<linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">';
@@ -117,13 +122,7 @@ export const frameworkBox = (frameworks,width) => {
         </g>`
       }
     </g>
-  `, width, `
-    @media only screen and (max-width: 600px){
-      .card {
-        width:411px;
-      }
-    }
-  `);
+  `, width,style);
   return box
 }
 

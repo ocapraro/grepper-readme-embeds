@@ -1,4 +1,9 @@
-export const basicEmbed = (title, content, width, style="") => {
+export const basicEmbed = (title, content, userWidth, style="") => {
+  let width;
+  // if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+  //   width = 411;
+  // }
+  width = userWidth;
   let box = `
     <svg class="card" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="${width}" height="200">
       <style>
